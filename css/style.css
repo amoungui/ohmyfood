@@ -12,6 +12,12 @@
   --white-color: #FFFFFF ;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .section-light-grey-background {
   background-color: var(--bg-color);
 }
@@ -86,6 +92,10 @@
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
+.section-background {
+  background: var(--bg-color);
+}
+
 .box-shadow {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
@@ -138,6 +148,22 @@
     top: 62.5px;
     left: -0.5px;
     gap: 17px;
+  }
+  .home-hero-banner {
+    width: 100%;
+  }
+  .home-hero-banner p {
+    width: 315px;
+    height: 46px;
+    top: 220px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .home-hero-banner .btn-hero {
+    margin-bottom: 40px;
   }
 }
 
