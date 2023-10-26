@@ -1,9 +1,13 @@
 /****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 :root {
     /* Colors */
     --primary-color: #9356dc;
     --bg-color: #F3F3F3;
-    --secondary-color: ;
+    --grey-color: #F6F6F6;
     --grey-secondary-color: #EAEAEA;
     --green-color: #99e2d0;
     --green-font-color: #008766;
@@ -11,12 +15,24 @@
     --blue-2-color: #003a68;
     --footer-bg-color: #353535;
     --white-color: #FFFFFF ;
-  }
+}
   
+
+.fa-solid {
+    background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
 body {
     margin: 0;
     display: flex;
     justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    /*padding: 0 50px;*/
+    box-sizing: border-box;
 }
 
 a {
@@ -24,12 +40,42 @@ a {
     text-decoration: none;
 }
 
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/******************************/
 .section-light-grey-background {
     background-color: var(--bg-color);
 }
 
 .section-grey-background {
-    background-color: var(--grey-secondary-color);
+    background: var(--grey-color);
+
 }
 
 .direction-row {
@@ -54,21 +100,6 @@ a {
 	text-align: center;
 }
 
-.section-title{
-    //styleName: Section Title;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-}
-
-.header-title {
-    width: 255px;
-    height: 68px;
-    top: 152px;
-    left: 42px;
-}
 /*** button style ***/
 .btn {
     width: 186px;
@@ -113,74 +144,85 @@ a {
 }
 /*** end button style ***/
 
+/******************************/
+/****** End General ***********/
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .main-container {
+/****** fonctionnement And restaurants ***********/
+    .fonctionnement-and-restaurants {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .fonctionnement-and-restaurants section {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    /****** Restaurants ***********/
+    .restaurants {
         width: 100%;
     }
 
-    header {
-        width: 100%;
-        /** logo **/
-        .header-logo{
-            width: 375px;
-            height: 63px;
-            padding: 14px, 89px, 13px, 89px;
-            background: var(--white-color);
-            box-shadow: 0px 2px 4px 0px #00000026;
-            gap: 10px;
-            margin-top: 20px;
+    .restaurants-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .restaurants-cards{
+        .card{
+            display: block;
+            margin-top: 33px;            
         }
 
-        img {
+        img{
+            width: 100%;
+            height: 136px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;            
+        }
+
+        .card-content {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
             display: flex;
-            align-content: center;
-            width: 197px;
-            height: 36px;
-            top: 14px;
-            left: 89px;
-            padding: 0px, 19px, 0px, 16px;
-            margin: auto;
-            gap: 10px;
+            flex-direction: row;
+            justify-content: space-between;
+            box-sizing: border-box;
         }
-        /** end logo **/
+    
+        .card-title {
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
 
-        /** location **/
-        .location{
-            display: flex; // Définir la div comme un conteneur flex
-            justify-content: center; // Centrer les éléments horizontalement
-            align-items: center; // Centrer les éléments verticalement
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 500;
-            width: 375px;
-            height: 50px;
-            top: 62.5px;
-            left: -0.5px;
-            gap: 17px;
+        .card-subtitle {
+            margin: 0;
         }
+    
+        .card-rating {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }        
     }
-
-    .home-hero-banner{
-        width: 100%;
-
-        p{
-            //Paragraph
-            width: 315px;
-            height: 46px;
-            top: 220px;
-            font-family: Roboto;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 21px;
-            letter-spacing: 0em;
-        }
-        .btn-hero{
-            margin-bottom: 40px;
-        }
-    }
-
     
     .footer-content {
         width: Fixed (375px);
@@ -204,5 +246,5 @@ a {
             letter-spacing: 0em;
             text-align: left;      
         }
-    }
+    }    
 }
