@@ -8,7 +8,7 @@
   /* Colors */
   --primary-color: #9356dc;
   --bg-color: #F3F3F3;
-  --grey-color: #F6F6F6;
+  --secondary-color: ;
   --grey-secondary-color: #EAEAEA;
   --green-color: #99e2d0;
   --green-font-color: #008766;
@@ -74,7 +74,7 @@ a {
 }
 
 .section-grey-background {
-  background: var(--grey-color);
+  background-color: var(--grey-secondary-color);
 }
 
 .direction-row {
@@ -110,6 +110,7 @@ a {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: center;
+  border: 0px solid var(--bg-color);
 }
 
 .button-primary-Color {
@@ -157,6 +158,96 @@ a {
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .main-container {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    /** logo **/
+    /** end logo **/
+    /** location **/
+  }
+  header .header-logo {
+    width: 98%;
+    height: 63px;
+    padding: 14px, 89px, 13px, 89px;
+    background: var(--white-color);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  header img {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 36px;
+    top: 14px;
+    left: 89px;
+    margin: auto;
+    gap: 10px;
+  }
+  header .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 50px;
+    top: 62.5px;
+    left: -0.5px;
+    gap: 17px;
+  }
+  .home-hero-banner {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .home-hero-banner p {
+    width: 315px;
+    height: 46px;
+    top: 220px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .home-hero-banner .btn-hero {
+    margin-bottom: 40px;
+  }
+  /** header btn options **/
+  .fonctionement {
+    padding: 10px;
+  }
+  .fonctionement .fonctionement-title {
+    margin-bottom: 30px;
+  }
+  .fonctionement .btn-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Créer deux colonnes de largeur égale */
+    grid-template-rows: repeat(3, auto); /* Créer deux lignes de hauteur adaptée au contenu */
+    grid-auto-flow: column; /* Remplir les cellules du grid par colonne */
+  }
+  .fonctionement .btn-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 2rem;
+    background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border: 1px solid black; /*0.1rem;*/
+    gap: 1.9rem;
+    border-radius: 20px;
+    margin-bottom: 0.9rem;
+    margin-right: 0.3rem;
+  }
+  .fonctionement .btn-option i {
+    border: 1px solid black;
+    margin-left: -80px;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  /** End header btn options **/
   /****** fonctionnement And restaurants ***********/
   .fonctionnement-and-restaurants {
     display: block;
