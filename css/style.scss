@@ -239,25 +239,37 @@ a {
             grid-template-columns: repeat(1, 1fr); /* Créer deux colonnes de largeur égale */
             grid-template-rows: repeat(3, auto); /* Créer deux lignes de hauteur adaptée au contenu */
             grid-auto-flow: column; /* Remplir les cellules du grid par colonne */
+            margin-left: 5%;
         }
     
         .btn-option {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 5px 10px auto;
+            grid-template-rows: repeat(1, auto);
+            grid-auto-flow: column;
             width: 90%;
             height: 2rem;
-            background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-            border: 1px solid black;/*0.1rem;*/
+            background-color: var(--bg-color);
+            color: black;
             gap: 1.9rem;
-            border-radius: 20px;
+            border-radius: 30px;
+            padding: 20px 10px 10px 0px;
             margin-bottom: 0.9rem;
             margin-right: 0.3rem;
-            i{
+            .list-number{
                 border: 1px solid black;
-                margin-left: -80px;
-                padding: 5px;
-                border-radius: 30px;
+                padding: 5px 15px 5px 15px;
+                margin-bottom: 20px;
+                margin-left: -15px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #9356DC;
+                color: var(--white-color);
+            }
+            .btn-list-option{
+                color: #9356DC;
             }
         }    
     }
