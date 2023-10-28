@@ -373,6 +373,7 @@ a {
   .menus-cards .card {
     display: block;
     margin-top: 33px;
+    border-radius: 15.04px;
   }
   .menus-cards .card-content {
     width: 100%;
