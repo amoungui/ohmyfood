@@ -436,6 +436,12 @@ a {
   .menus-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
   }
   .menus-cards .card-subtitle {
     margin: 0;
