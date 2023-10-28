@@ -19,11 +19,18 @@
     --card-box-shadow-color: #0000001A;
   }
 
-  
+  .fa-icon{
+    font-size: 21px;
+    width: 21px;
+    height: 21px;
+  }
 
-.fa-solid {
-    background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+.solid-fa {
+    background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 body {
     margin: 0;
