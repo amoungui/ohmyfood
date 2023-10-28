@@ -334,25 +334,32 @@ a {
   /***************************************************/
   /******** General style for restaurants page********/
   /***************************************************/
+  main {
+    position: relative;
+  }
   .page-hero-banner {
     width: 100%;
     height: 275px;
     top: 63px;
   }
   .page-hero-banner img {
-    width: auto;
+    width: 100%;
     height: 275px;
+    position: absolute;
+    z-index: -1; /* Met l'image en arrière-plan */
   }
   .commande-and-menus {
     display: block;
     justify-content: space-between;
-    border: 1px solid black;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    position: relative;
+    z-index: 1; /* Garde la div au premier plan */
+    margin-top: -10%;
   }
   .commande-and-menus section {
     padding: 30px;
     box-sizing: border-box;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
   }
   /****** Restaurants ***********/
   .menus {
