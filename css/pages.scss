@@ -1,0 +1,192 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    /* Colors */
+    --primary-color: #9356dc;
+    --bg-color: #F3F3F3;
+    --secondary-color: ;
+    --grey-secondary-color: #EAEAEA;
+    --green-color: #99e2d0;
+    --green-font-color: #008766;
+    --blue-color: #89c8fa;
+    --blue-2-color: #003a68;
+    --footer-bg-color: #353535;
+    --white-color: #FFFFFF ;
+    --border-subtitle-color: #99E2D0;
+    --card-box-shadow-color: #0000001A;
+  }
+  
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /***************************************************/
+    /******** General style for restaurants page********/
+    /***************************************************/
+    .main-container {
+        width: 100%;
+    }
+
+    .header-logo {
+        display: grid; 
+        grid-template-columns: 10px auto; 
+        grid-template-rows: repeat(1, auto); 
+        grid-auto-flow: column;
+        margin-bottom: 2%;
+    }
+
+    .header-arrow {
+        margin-top: 13px; 
+        font-size: 20px; 
+        padding:10px;
+    }
+
+    main{
+        position: relative;
+    }
+
+    .page-hero-banner{
+        width: 100%;
+        height: 275px;
+        top: 63px;
+        img{
+            width: 100%;
+            height: 275px;
+            position: absolute;
+            z-index: -1; /* Met l'image en arrière-plan */
+        }
+    }
+
+    .commande-and-menus {
+        display: block;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1; /* Garde la div au premier plan */
+        margin-top: -10%;
+    }
+    
+    .commande-and-menus section {
+        padding: 30px 30px 0px 15px;
+        box-sizing: border-box;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    /****** Restaurants ***********/
+    .menus {
+        width: 100%;
+        .menus-cards{
+            .section-title {
+                margin: 0;
+                font-family: Shrikhand;
+                font-size: 28px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 41px;
+                letter-spacing: 0em;
+                text-align: left;    
+            }
+            .section-subtitle{
+                text-transform: uppercase;
+                font-family: Roboto;
+                width: 80%;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .menus-subtitle h5 {
+                position: relative;
+                display: inline-block;
+                padding-bottom: 5px;
+                margin-top: 10%;
+                margin-bottom: 0px;
+            }
+
+            .menus-subtitle h5::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 10%; /* Centrer la bordure */
+                transform: translateX(-50%); /* Centrer la bordure */
+                height: 2px; /* Épaisseur de la bordure */
+                width: 20%; /* Largeur de la bordure */
+                background-color: var(--border-subtitle-color); /* Couleur de la bordure */
+            }
+        }
+    }
+ 
+     .menus-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menus-cards{
+        .card{
+            width: 100%;
+            display: block;
+            margin-top: 15px;  
+            border-radius: 15.04px;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px var(--card-box-shadow-color);      
+        }
+
+        .card-content {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        
+        .card-subtitle-box{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            margin-top: 10px;
+            margin-bottom: 4px;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .card-subtitle {
+            margin: 0;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+    
+        .card-rating {
+            margin-top: 32px;
+            margin-bottom: 2px;
+            .euro{
+                font-family: Roboto;
+                font-size: 15px;
+            }
+        }        
+    }    
+
+}
