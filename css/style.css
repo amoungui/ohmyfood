@@ -327,6 +327,18 @@ a {
   /***************************************************/
   /******** General style for restaurants page********/
   /***************************************************/
+  .header-logo {
+    display: grid;
+    grid-template-columns: 10px auto;
+    grid-template-rows: repeat(1, auto);
+    grid-auto-flow: column;
+    margin-bottom: 2%;
+  }
+  .header-arrow {
+    margin-top: 13px;
+    font-size: 20px;
+    padding: 10px;
+  }
   main {
     position: relative;
   }
