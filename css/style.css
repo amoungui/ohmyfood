@@ -60,10 +60,6 @@ a {
   font-size: 16px;
 }
 
-.neutral-star {
-  color: var(--main-bg-color);
-}
-
 /******************************/
 .section-light-grey-background {
   background-color: var(--bg-color);

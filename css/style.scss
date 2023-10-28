@@ -60,9 +60,6 @@ a {
     font-size: 16px;
 }
 
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
 /******************************/
 .section-light-grey-background {
@@ -393,7 +390,6 @@ a {
     /****** Restaurants ***********/
     .menus {
         width: 100%;
-        
         .section-title {
             margin: 0;
             font-family: Shrikhand;
@@ -407,7 +403,7 @@ a {
     }
  
      .menus-title {
-         display: flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
