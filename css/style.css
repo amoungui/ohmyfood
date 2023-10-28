@@ -42,13 +42,7 @@ a {
 
 .section-title {
   margin: 0;
-  font-family: Shrikhand;
-  font-size: 28px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 41px;
-  letter-spacing: 0em;
-  text-align: left;
+  font-size: 22px;
 }
 
 .card {
@@ -366,6 +360,16 @@ a {
   /****** Restaurants ***********/
   .menus {
     width: 100%;
+  }
+  .menus .section-title {
+    margin: 0;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
   }
   .menus-title {
     display: flex;
