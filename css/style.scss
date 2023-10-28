@@ -30,7 +30,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+ .fa-location-dot{
+    width: 12px;
+    height: 16px;
+    margin-top: 3%;
+ }
 
 body {
     margin: 0;
@@ -221,10 +225,16 @@ a {
     .home-hero-banner{
         width: 100%;
         padding-top: 30px;
-
+        .section-title{
+            font-family: Roboto;
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+        }
         p{
             //Paragraph
-            width: 315px;
+            width: 90%;
             height: 46px;
             top: 220px;
             font-family: Roboto;
