@@ -60,10 +60,6 @@ a {
   font-size: 16px;
 }
 
-.euro {
-  font-weight: 700;
-}
-
 .neutral-star {
   color: var(--main-bg-color);
 }
@@ -384,6 +380,10 @@ a {
     justify-content: space-between;
     box-sizing: border-box;
   }
+  .menus-cards .card-subtitle-box {
+    display: flex;
+    justify-content: space-between;
+  }
   .menus-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
@@ -392,8 +392,12 @@ a {
     margin: 0;
   }
   .menus-cards .card-rating {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 32px;
+    margin-bottom: 2px;
+  }
+  .menus-cards .card-rating .euro {
+    font-family: Roboto;
+    font-size: 15px;
   }
 }
 
