@@ -439,6 +439,12 @@ a {
   }
   .menus-cards .card-subtitle {
     margin: 0;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
   }
   .menus-cards .card-rating {
     margin-top: 32px;
