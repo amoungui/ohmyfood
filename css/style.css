@@ -373,6 +373,7 @@ header .location {
   }
   header {
     width: 100%;
+    height: 113px;
     /** logo **/
     /** end logo **/
     /** location **/
