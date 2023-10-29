@@ -332,6 +332,29 @@ header .location {
   margin-bottom: 5px;
 }
 
+.footer-content {
+  width: Fixed 375px;
+  height: Hug 186px;
+  top: 2066px;
+  padding: 22px, 25px, 22px, 25px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+  background: var(--footer-bg-color);
+  color: var(--bg-color);
+}
+.footer-content .footer-title {
+  width: 137.58px;
+  height: 27px;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 /****** End Desktop Style ***********/
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -504,8 +527,7 @@ header .location {
     margin-bottom: 5px;
   }
   .footer-content {
-    width: Fixed 375px;
-    height: Hug 186px;
+    width: 100%;
     top: 2066px;
     padding: 22px, 25px, 22px, 25px;
     padding-left: 20px;
