@@ -30,11 +30,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
- .fa-location-dot{
-    width: 12px;
-    height: 16px;
-    margin-top: 3%;
- }
+
 
 body {
     margin: 0;
@@ -157,30 +153,95 @@ a {
     animation-duration: 300ms;
 }
 /*** end button style ***/
-
+.main-container {
+    width: 100%;
+}
 /******************************/
 /****** End General ***********/
+/******************************/
+
+/****** Desktop Style ***********/
+header {
+    width: 100%;
+    height: 146px;
+    /** logo **/
+    .header-logo{
+        width: 98%;
+        height: 96px;
+        padding: 14px, 89px, 13px, 89px;
+        background: var(--white-color);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    img {
+        display: flex;
+        align-content: center;
+        width: 100%;
+        height: 36px;
+        top: 14px;
+        left: 89px;
+        margin: auto;
+        gap: 10px;
+    }
+    /** end logo **/
+
+    /** location **/
+    .location{
+        display: flex; // Définir la div comme un conteneur flex
+        justify-content: center; // Centrer les éléments horizontalement
+        align-items: center; // Centrer les éléments verticalement
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        height: 50px;
+        top: 62.5px;
+        left: -0.5px;
+        gap: 17px;
+    }
+}
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+.home-hero-banner{
+    width: 100%;
+    padding-top: 30px;
+    .section-title{
+        font-family: Roboto;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+    }
+    p{
+        width: 90%;
+        height: 46px;
+        top: 220px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+        letter-spacing: 0em;
+    }
+    .btn-hero{
+        margin-bottom: 40px;
+    }
+}
+/****** End Desktop Style ***********/
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
+    /***..***/
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .main-container {
-        width: 100%;
-    }
+    .fa-location-dot{
+        width: 12px;
+        height: 16px;
+        margin-top: 3%;
+     }
 
     header {
         width: 100%;

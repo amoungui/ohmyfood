@@ -32,12 +32,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.fa-location-dot {
-  width: 12px;
-  height: 16px;
-  margin-top: 3%;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -159,23 +153,90 @@ a {
 }
 
 /*** end button style ***/
+.main-container {
+  width: 100%;
+}
+
 /******************************/
 /****** End General ***********/
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/******************************/
+/****** Desktop Style ***********/
+header {
+  width: 100%;
+  height: 146px;
+  /** logo **/
+  /** end logo **/
+  /** location **/
+}
+header .header-logo {
+  width: 98%;
+  height: 96px;
+  padding: 14px, 89px, 13px, 89px;
+  background: var(--white-color);
+  gap: 10px;
+  margin-top: 20px;
+}
+header img {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 36px;
+  top: 14px;
+  left: 89px;
+  margin: auto;
+  gap: 10px;
+}
+header .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  height: 50px;
+  top: 62.5px;
+  left: -0.5px;
+  gap: 17px;
+}
+
+.home-hero-banner {
+  width: 100%;
+  padding-top: 30px;
+}
+.home-hero-banner .section-title {
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+.home-hero-banner p {
+  width: 90%;
+  height: 46px;
+  top: 220px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+.home-hero-banner .btn-hero {
+  margin-bottom: 40px;
+}
+
+/****** End Desktop Style ***********/
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  .hebergements-and-populaires {
-    flex-direction: column;
-  }
-  .hebergements {
-    width: 100%;
-  }
+  /***..***/
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .main-container {
-    width: 100%;
+  .fa-location-dot {
+    width: 12px;
+    height: 16px;
+    margin-top: 3%;
   }
   header {
     width: 100%;
