@@ -225,7 +225,6 @@ header .location {
 .fonctionement {
   width: 100%;
   height: 228.38px;
-  /*padding: 50px 18px 50px 18px;*/
   gap: 25px;
 }
 .fonctionement .fonctionement-title {
@@ -287,7 +286,6 @@ header .location {
 /****** Restaurants ***********/
 .restaurants {
   width: 100%;
-  padding: 0 50px;
 }
 
 .restaurants-title {
@@ -543,15 +541,15 @@ header .location {
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  .footer-content {
-    display: block;
-    top: 2066px;
-    padding: 22px, 25px, 22px, 25px;
-    gap: 10px;
+  footer {
     background: var(--footer-bg-color);
     color: var(--bg-color);
   }
-  .footer-content .footer-title {
+  footer .footer-content {
+    display: block;
+    gap: 10px;
+  }
+  footer .footer-content .footer-title {
     width: 137.58px;
     height: 27px;
     font-family: Shrikhand;
@@ -562,7 +560,7 @@ header .location {
     letter-spacing: 0em;
     text-align: left;
   }
-  .footer-content .footer-menu {
+  footer .footer-content .footer-menu {
     display: flex;
     flex-direction: column;
     gap: 3px;
