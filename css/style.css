@@ -436,6 +436,7 @@ header .location {
   /** header btn options **/
   .fonctionement {
     padding: 10px;
+    height: 360px; /*440px;*/
   }
   .fonctionement .fonctionement-title {
     margin-bottom: 30px;
