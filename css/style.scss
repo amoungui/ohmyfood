@@ -342,6 +342,8 @@ header {
 }
 
 .footer-content {
+    display: flex;
+    flex-direction: row-reverse;
     top: 2066px;
     padding: 22px, 25px, 22px, 25px;
     padding-left: 20px;
@@ -360,6 +362,13 @@ header {
         line-height: 26px;
         letter-spacing: 0em;
         text-align: left;      
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-direction: row;
+        margin-top: 22px;
+        gap: 20px;
     }
 }
 /****** End Desktop Style ***********/
