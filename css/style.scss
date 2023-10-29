@@ -153,9 +153,7 @@ a {
     animation-duration: 300ms;
 }
 /*** end button style ***/
-.main-container {
-    width: 100%;
-}
+
 /******************************/
 /****** End General ***********/
 /******************************/
@@ -202,7 +200,6 @@ header {
     }
 }
 
-
 .home-hero-banner{
     width: 100%;
     padding-top: 30px;
@@ -227,6 +224,58 @@ header {
         margin-bottom: 40px;
     }
 }
+
+    /** header btn options **/
+    .fonctionement{
+        width: 100%;
+        height: 228.38px;
+        padding: 50px 18px 50px 18px;
+        gap: 25px;
+        .fonctionement-title{
+            margin-bottom: 30px;
+        }
+        .btn-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Créer deux colonnes de largeur égale */
+            grid-template-rows: repeat(1, auto); /* Créer deux lignes de hauteur adaptée au contenu */
+            grid-auto-flow: column; /* Remplir les cellules du grid par colonne */
+            /*margin-left: 3%;*/
+        }
+    
+        .btn-option {
+            display: grid;
+            grid-template-columns: 5px 10px auto;
+            grid-template-rows: repeat(1, auto);
+            grid-auto-flow: column;
+            width: 90%;
+            height: 25.38px;
+            background-color: var(--bg-color);
+            color: black;
+            gap: 1.9rem;
+            border-radius: 30px;
+            padding: 20px 10px 10px 0px;
+            margin-bottom: 0.9rem;
+            margin-right: 0.3rem;
+            .list-number{
+                border: 1px solid black;
+                padding: 5px 15px 5px 15px;
+                margin-bottom: 20px;
+                margin-left: -15px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #9356DC;
+                border: 0px solid #9356DC;
+                color: var(--white-color);
+            }
+            .btn-list-option{
+                color: #9356DC;
+            }
+        }    
+    }
+    /** End header btn options **/
+
 /****** End Desktop Style ***********/
 
 /****** Media queries ***********/
@@ -237,6 +286,10 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container {
+        width: 100%;
+    }
+    
     .fa-location-dot{
         width: 12px;
         height: 16px;
