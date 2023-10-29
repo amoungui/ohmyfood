@@ -503,6 +503,7 @@ header .location {
     grid-gap: 30px;
   }
   .restaurants-cards .card {
+    display: block;
     margin-top: 33px;
   }
   .restaurants-cards img {
