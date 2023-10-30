@@ -96,9 +96,9 @@ main {
   position: absolute;
   bottom: 0;
   left: 10%; /* Centrer la bordure */
-  transform: translateX(-330%); /* Centrer la bordure */
+  transform: translateX(-130%); /* Centrer la bordure */
   height: 2px; /* Épaisseur de la bordure */
-  width: 3%; /* Largeur de la bordure */
+  width: 8%; /* Largeur de la bordure */
   background-color: var(--border-subtitle-color); /* Couleur de la bordure */
 }
 
@@ -162,7 +162,6 @@ main {
 
 /****** End Pages Desktop style ******/
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /***************************************************/
