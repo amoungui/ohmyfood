@@ -1,4 +1,24 @@
 /****** Pages Desktop style ******/
+.main-container {
+    width: 100%;
+}
+
+.header-logo {
+    display: grid; 
+    grid-template-columns: 10px auto; 
+    grid-template-rows: repeat(1, auto); 
+    grid-auto-flow: column;
+    height: 96.34px;
+    width: 100%;
+}
+
+.header-arrow {
+    margin-top: 30px; 
+    font-size: 20px; 
+    padding:10px;
+}
+
+
 
 /****** End Pages Desktop style ******/
 
@@ -96,9 +116,9 @@
                 position: absolute;
                 bottom: 0;
                 left: 10%; /* Centrer la bordure */
-                transform: translateX(-140%); /* Centrer la bordure */
+                transform: translateX(-80%); /* Centrer la bordure */
                 height: 2px; /* Épaisseur de la bordure */
-                width: 7%; /* Largeur de la bordure */
+                width: 13%; /* Largeur de la bordure */
                 background-color: var(--border-subtitle-color); /* Couleur de la bordure */
             }
         }
