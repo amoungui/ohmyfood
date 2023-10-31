@@ -1,173 +1,5 @@
 /****** Pages Desktop style ******/
-.main-container {
-    width: 100%;
-}
 
-.header-page{
-    width: 99.8%;
-    height: 96.34px;
-    margin: 0;
-    padding: 0;
-}
-
-.header-logo {
-    display: grid; 
-    grid-template-columns: 10px auto; 
-    grid-template-rows: repeat(1, auto); 
-    grid-auto-flow: column;
-    height: 96.34px;
-    width: 100%;
-}
-
-.header-arrow {
-    margin-top: 22px; 
-    font-size: 20px; 
-    padding:10px;
-}
-
-main{
-    position: relative;
-}
-
-.page-hero-banner{
-    width: 100%;
-    height: 383px;
-    img{
-        width: 100%;
-        height: 383px;
-        position: absolute;
-        z-index: -1; /* Met l'image en arrière-plan */
-    }
-}
-
-.commande-and-menus {
-    display: block;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1; /* Garde la div au premier plan */
-    margin-top: -5%;
-    box-sizing: border-box;
-    padding: 30px 180px 0px 180px;
-}
-
-.commande-and-menus section {
-    padding: 20px 30px 0px 15px;
-    box-sizing: border-box;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    padding-bottom: 50px;
-}
-
-/****** Restaurants ***********/
-.menus {
-    width: 100%;
-    padding-bottom: 50px;
-    .menus-cards{
-        .section-title {
-            margin: 0;
-            font-family: Shrikhand;
-            font-size: 28px;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 41px;
-            letter-spacing: 0em;
-            text-align: left;    
-        }
-        .section-subtitle{
-            text-transform: uppercase;
-            font-family: Roboto;
-            width: 80%;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-
-        .menus-subtitle h5 {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-top: 10%;
-            margin-bottom: 0px;
-        }
-
-        .menus-subtitle h5::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 10%; /* Centrer la bordure */
-            transform: translateX(-130%); /* Centrer la bordure */
-            height: 2px; /* Épaisseur de la bordure */
-            width: 8%; /* Largeur de la bordure */
-            background-color: var(--border-subtitle-color); /* Couleur de la bordure */
-        }
-    }
-}
-
-.menus-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.menus-cards{
-    padding: 30px 210.5px 0px 210.5px;
-    .card{
-        width: 100%;
-        display: block;
-        margin-top: 15px;  
-        border-radius: 15.04px;
-        box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px var(--card-box-shadow-color);      
-    }
-
-    .card-content {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        box-sizing: border-box;
-    }
-    
-    .card-subtitle-box{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .card-title {
-        margin-top: 10px;
-        margin-bottom: 4px;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .card-subtitle {
-        margin: 0;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-
-    }
-
-    .card-rating {
-        margin-top: 32px;
-        margin-bottom: 2px;
-        .euro{
-            font-family: Roboto;
-            font-size: 15px;
-        }
-    }        
-}
 /****** End Pages Desktop style ******/
 
 /****** Media queries ***********/
@@ -181,15 +13,18 @@ main{
     }
 
     .header-logo {
+        width: 99.7%;
+        height: 63px;
         display: grid; 
         grid-template-columns: 10px auto; 
         grid-template-rows: repeat(1, auto); 
         grid-auto-flow: column;
-        margin-bottom: 2%;
+        /*margin-bottom: 2%;*/
+        border: 1px solid black;
     }
 
     .header-arrow {
-        margin-top: 13px; 
+        margin-top: 15px; 
         font-size: 20px; 
         padding:10px;
     }
