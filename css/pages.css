@@ -19,6 +19,21 @@
   padding: 10px;
 }
 
+main {
+  position: relative;
+}
+
+.page-hero-banner {
+  width: 100%;
+  height: 383px;
+}
+.page-hero-banner img {
+  width: 100%;
+  height: 383px;
+  position: absolute;
+  z-index: -1; /* Met l'image en arrière-plan */
+}
+
 /****** End Pages Desktop style ******/
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */

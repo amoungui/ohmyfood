@@ -18,6 +18,20 @@
     padding:10px;
 }
 
+main{
+    position: relative;
+}
+
+.page-hero-banner{
+    width: 100%;
+    height: 383px;
+    img{
+        width: 100%;
+        height: 383px;
+        position: absolute;
+        z-index: -1; /* Met l'image en arrière-plan */
+    }
+}
 
 
 /****** End Pages Desktop style ******/
