@@ -17,8 +17,6 @@
     grid-template-columns: 10px auto;
     grid-template-rows: repeat(1, auto);
     grid-auto-flow: column;
-    /*margin-bottom: 2%;*/
-    border: 1px solid black;
   }
   .header-arrow {
     margin-top: 15px;
@@ -88,9 +86,9 @@
     position: absolute;
     bottom: 0;
     left: 10%; /* Centrer la bordure */
-    transform: translateX(-50%); /* Centrer la bordure */
+    transform: translateX(-140%); /* Centrer la bordure */
     height: 2px; /* Épaisseur de la bordure */
-    width: 20%; /* Largeur de la bordure */
+    width: 7%; /* Largeur de la bordure */
     background-color: var(--border-subtitle-color); /* Couleur de la bordure */
   }
   .menus-title {
