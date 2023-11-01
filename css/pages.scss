@@ -161,6 +161,19 @@ main{
             font-family: Roboto;
             font-size: 15px;
         }
+        .btn-check {
+            display: none;
+            width: 20px;
+            height: auto;
+            background-color: lightblue;
+        }
+        &:hover .fa-solid {
+            display: inline;
+        }
+        
+        & .euro {
+            display: inline;
+        }
     }    
 }
 /****** End Pages Desktop style ******/

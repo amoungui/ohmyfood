@@ -154,6 +154,18 @@ main {
   font-family: Roboto;
   font-size: 15px;
 }
+.menus-cards .card-rating .btn-check {
+  display: none;
+  width: 20px;
+  height: auto;
+  background-color: lightblue;
+}
+.menus-cards .card-rating:hover .fa-solid {
+  display: inline;
+}
+.menus-cards .card-rating .euro {
+  display: inline;
+}
 
 /****** End Pages Desktop style ******/
 /****** Media queries ***********/
