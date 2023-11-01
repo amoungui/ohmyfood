@@ -150,6 +150,11 @@ main {
 .menus-cards .card-rating {
   margin-top: 32px;
   margin-bottom: 2px;
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-template-rows: repeat(1, auto);
+  grid-auto-flow: column;
+  grid-gap: 50%;
 }
 .menus-cards .card-rating .euro {
   font-family: Roboto;
@@ -157,11 +162,21 @@ main {
 }
 .menus-cards .card-rating .btn-check {
   display: none;
-  width: 20px;
-  height: auto;
+  margin-top: -37px;
+  margin-bottom: -25px;
+  width: 40px;
+  height: 64px;
+  border-top-right-radius: 15.04px;
+  border-bottom-right-radius: 15.04px;
   background-color: lightblue;
 }
-.menus-cards .card-rating:hover .fa-solid {
+.menus-cards .card-rating .btn-check .fa-circle-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60%;
+}
+.menus-cards .card-rating:hover .btn-check {
   display: inline;
 }
 .menus-cards .card-rating .euro {

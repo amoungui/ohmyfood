@@ -158,17 +158,33 @@ main{
     .card-rating {
         margin-top: 32px;
         margin-bottom: 2px;
+        display: grid;
+        grid-template-columns: 20% 20%;
+        grid-template-rows: repeat(1, auto);
+        grid-auto-flow: column;
+        grid-gap: 50%;
         .euro{
             font-family: Roboto;
             font-size: 15px;
         }
         .btn-check {
             display: none;
-            width: 20px;
-            height: auto;
+            margin-top: -37px;
+            margin-bottom: -25px;
+            width: 40px;
+            height: 64px;
+            border-top-right-radius: 15.04px;
+            border-bottom-right-radius: 15.04px;
             background-color: lightblue;
+            .fa-circle-check{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 60%;
+            }
         }
-        &:hover .fa-solid {
+        
+        &:hover .btn-check {
             display: inline;
         }
         
