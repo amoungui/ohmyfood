@@ -31,6 +31,27 @@
     -webkit-text-fill-color: transparent;
 }
 
+.hidden {
+    display: none;
+}
+
+.card-rating:hover .fa-solid {
+    display: inline;
+}
+
+.card-rating:hover .fa-regular {
+    display: none;
+}
+
+.card-rating:active .fa-solid {
+    display: inline;
+}
+
+.card-rating:active .fa-regular {
+    display: none;
+}
+
+
 
 body {
     margin: 0;
