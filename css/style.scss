@@ -84,7 +84,7 @@ a {
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover; /* Cette ligne assure que l'image couvre la zone sans se déformer. */
 }
 
 .card-title {

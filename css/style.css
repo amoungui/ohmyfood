@@ -188,6 +188,7 @@ a {
 header {
   width: 100%;
   height: 146px;
+  background: var(--white-color);
   /** logo **/
   /** end logo **/
   /** location **/
