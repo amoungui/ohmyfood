@@ -123,7 +123,7 @@ main {
   height: 64px;
   border-top-right-radius: 15.04px;
   border-bottom-right-radius: 15.04px;
-  background-color: lightblue;
+  background-color: #89C8FA;
 }
 .menus-cards .card .btn-check .fa-circle-check {
   display: flex;
