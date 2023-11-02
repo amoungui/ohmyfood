@@ -20,10 +20,6 @@
   --card-box-shadow-color: #0000001A;
 }
 
-.fa-solid {
-  background-color: var(--white-color);
-}
-
 .fa-icon {
   font-size: 21px;
   width: 21px;
