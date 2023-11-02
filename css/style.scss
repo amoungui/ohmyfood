@@ -19,11 +19,15 @@
     --card-box-shadow-color: #0000001A;
   }
 
-  .fa-icon{
+.fa-solid {
+    background-color: var(--white-color);
+}
+
+.fa-icon{
     font-size: 21px;
     width: 21px;
     height: 21px;
-  }
+}
 
 .solid-fa {
     background: -webkit-linear-gradient(45deg, #9356DC, #FF79DA);
@@ -166,7 +170,6 @@ a {
     animation-duration: 300ms;
     background: linear-gradient(200.64deg, #9747FF -15.2%, #ff79da 90.74%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-    border: 1px solid #9747FF
 }
 .section-background{
     background: var(--bg-color);
