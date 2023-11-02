@@ -162,12 +162,14 @@ a {
 
 .btn-hero-linear-gradient-background {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 0.8;
 }
 
 .btn-hero-linear-gradient-background:hover {
   animation-timing-function: ease-out;
   animation-duration: 300ms;
-  background: linear-gradient(200.64deg, #9747FF -15.2%, #ff79da 90.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 1;
 }
 
 .section-background {
