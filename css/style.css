@@ -20,6 +20,63 @@
   --card-box-shadow-color: #0000001A;
 }
 
+/* Style du loader */
+.loader {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s ease-out;
+}
+.loader img {
+  margin-bottom: 5%;
+}
+
+.load {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+/* Animation du loader */
+@keyframes disappear {
+  from {
+    opacity: 1;
+    z-index: 9999;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Applique l'animation après un certain temps */
+.loader {
+  animation-name: disappear;
+  animation-delay: 3s; /* Durée avant que l'animation commence */
+  animation-duration: 2s; /* Durée de l'animation */
+  animation-fill-mode: forwards; /* Garde les styles de la dernière image clé après que l'animation soit terminée */
+}
+
+/* End Style du loader */
 .fa-icon {
   font-size: 21px;
   width: 21px;
