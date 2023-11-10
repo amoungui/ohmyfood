@@ -9,7 +9,6 @@
     /* Colors */
     --primary-color: #9356dc;
     --bg-color: #F3F3F3;
-    --secondary-color: ;
     --grey-secondary-color: #EAEAEA;
     --green-color: #99e2d0;
     --green-font-color: #008766;
@@ -246,7 +245,7 @@ header {
     .header-logo{
         width: 98%;
         height: 96px;
-        padding: 14px, 89px, 13px, 89px;
+        padding: 14px 89px 13px 89px;
         background: var(--white-color);
         gap: 10px;
         margin-top: 20px;
@@ -425,7 +424,7 @@ header {
     display: flex;
     flex-direction: row-reverse;
     top: 2066px;
-    padding: 22px, 25px, 22px, 25px;
+    padding: 22px 25px 22px 25px;
     padding-left: 20px;
     padding-bottom: 20px;
     gap: 10px;   
@@ -478,7 +477,7 @@ header {
         .header-logo{
             width: 98%;
             height: 63px;
-            padding: 14px, 89px, 13px, 89px;
+            padding: 14px 89px 13px 89px;
             background: var(--white-color);
             gap: 10px;
             margin-top: 20px;
