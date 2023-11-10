@@ -1,13 +1,12 @@
 @charset "UTF-8";
 /****** General ***********/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-
 * {
   font-family: "Roboto", sans-serif;
 }
 
-
 :root {
+  /* Colors */
   --primary-color: #9356dc;
   --bg-color: #F3F3F3;
   --grey-secondary-color: #EAEAEA;
@@ -16,7 +15,7 @@
   --blue-color: #89c8fa;
   --blue-2-color: #003a68;
   --footer-bg-color: #353535;
-  --white-color: #FFFFFF;
+  --white-color: #FFFFFF ;
   --border-subtitle-color: #99E2D0;
   --card-box-shadow-color: #0000001A;
 }
@@ -37,16 +36,13 @@
   align-items: center;
   transition: all 2s ease-out;
 }
-
 .loader img {
   margin-bottom: 5%;
 }
 
 .load {
-  border: 16px solid #f3f3f3;
-  /* Light grey */
-  border-top: 16px solid #3498db;
-  /* Blue */
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -59,32 +55,25 @@
     opacity: 1;
     z-index: 9999;
   }
-
   to {
     opacity: 0;
     z-index: -1;
   }
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 /* Applique l'animation après un certain temps */
 .loader {
   animation-name: disappear;
-  animation-delay: 3s;
-  /* Durée avant que l'animation commence */
-  animation-duration: 2s;
-  /* Durée de l'animation */
-  animation-fill-mode: forwards;
-  /* Garde les styles de la dernière image clé après que l'animation soit terminée */
+  animation-delay: 3s; /* Durée avant que l'animation commence */
+  animation-duration: 2s; /* Durée de l'animation */
+  animation-fill-mode: forwards; /* Garde les styles de la dernière image clé après que l'animation soit terminée */
 }
 
 /* End Style du loader */
@@ -151,8 +140,7 @@ a {
 }
 
 .card img {
-  object-fit: cover;
-  /* Cette ligne assure que l'image couvre la zone sans se déformer. */
+  object-fit: cover; /* Cette ligne assure que l'image couvre la zone sans se déformer. */
 }
 
 .card-title {
@@ -264,16 +252,13 @@ header {
   /** end logo **/
   /** location **/
 }
-
 header .header-logo {
-  width: 98%;
   height: 96px;
   padding: 14px 89px 13px 89px;
   background: var(--white-color);
   gap: 10px;
   margin-top: 20px;
 }
-
 header img {
   display: flex;
   align-content: center;
@@ -284,7 +269,6 @@ header img {
   margin: auto;
   gap: 10px;
 }
-
 header .location {
   display: flex;
   justify-content: center;
@@ -303,7 +287,6 @@ header .location {
   width: 100%;
   padding-top: 30px;
 }
-
 .home-hero-banner .section-title {
   font-family: Roboto;
   font-size: 34px;
@@ -311,7 +294,6 @@ header .location {
   line-height: 28px;
   letter-spacing: 0em;
 }
-
 .home-hero-banner p {
   width: 90%;
   height: 46px;
@@ -322,7 +304,6 @@ header .location {
   line-height: 21px;
   letter-spacing: 0em;
 }
-
 .home-hero-banner .btn-hero {
   margin-bottom: 40px;
 }
@@ -333,22 +314,16 @@ header .location {
   height: 228.38px;
   gap: 25px;
 }
-
 .fonctionement .fonctionement-title {
   margin-bottom: 30px;
 }
-
 .fonctionement .btn-group {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Créer deux colonnes de largeur égale */
-  grid-template-rows: repeat(1, auto);
-  /* Créer deux lignes de hauteur adaptée au contenu */
-  grid-auto-flow: column;
-  /* Remplir les cellules du grid par colonne */
+  grid-template-columns: repeat(3, 1fr); /* Créer deux colonnes de largeur égale */
+  grid-template-rows: repeat(1, auto); /* Créer deux lignes de hauteur adaptée au contenu */
+  grid-auto-flow: column; /* Remplir les cellules du grid par colonne */
   /*margin-left: 3%;*/
 }
-
 .fonctionement .btn-option {
   display: grid;
   grid-template-columns: 5px 10px auto;
@@ -364,7 +339,6 @@ header .location {
   margin-bottom: 0.9rem;
   margin-right: 0.3rem;
 }
-
 .fonctionement .btn-option .list-number {
   border: 1px solid black;
   padding: 5px 15px 5px 15px;
@@ -378,7 +352,6 @@ header .location {
   border: 0px solid #9356DC;
   color: var(--white-color);
 }
-
 .fonctionement .btn-option .btn-list-option {
   color: #9356DC;
 }
@@ -415,19 +388,16 @@ header .location {
   grid-auto-flow: column;
   grid-gap: 30px;
 }
-
 .restaurants-cards .card {
   display: block;
   margin-top: 33px;
 }
-
 .restaurants-cards img {
   width: 100%;
   height: 136px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
 .restaurants-cards .card-content {
   width: 100%;
   padding-left: 15px;
@@ -437,16 +407,13 @@ header .location {
   justify-content: space-between;
   box-sizing: border-box;
 }
-
 .restaurants-cards .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
 }
-
 .restaurants-cards .card-subtitle {
   margin: 0;
 }
-
 .restaurants-cards .card-rating {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -463,7 +430,6 @@ header .location {
   background: var(--footer-bg-color);
   color: var(--bg-color);
 }
-
 .footer-content .footer-title {
   width: 137.58px;
   height: 27px;
@@ -475,7 +441,6 @@ header .location {
   letter-spacing: 0em;
   text-align: left;
 }
-
 .footer-content .footer-menu {
   display: flex;
   flex-direction: row;
@@ -489,19 +454,16 @@ header .location {
 @media (max-width: 1024px) {
   /***..***/
 }
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .main-container {
     width: 100%;
   }
-
   .fa-location-dot {
     width: 12px;
     height: 16px;
     margin-top: 3%;
   }
-
   header {
     width: 100%;
     height: 113px;
@@ -509,16 +471,13 @@ header .location {
     /** end logo **/
     /** location **/
   }
-
   header .header-logo {
-    width: 98%;
     height: 63px;
     padding: 14px 89px 13px 89px;
     background: var(--white-color);
     gap: 10px;
     margin-top: 20px;
   }
-
   header img {
     display: flex;
     align-content: center;
@@ -529,7 +488,6 @@ header .location {
     margin: auto;
     gap: 10px;
   }
-
   header .location {
     display: flex;
     justify-content: center;
@@ -543,12 +501,10 @@ header .location {
     left: -0.5px;
     gap: 17px;
   }
-
   .home-hero-banner {
     width: 100%;
     padding-top: 30px;
   }
-
   .home-hero-banner .section-title {
     font-family: Roboto;
     font-size: 34px;
@@ -556,7 +512,6 @@ header .location {
     line-height: 28px;
     letter-spacing: 0em;
   }
-
   .home-hero-banner p {
     width: 90%;
     height: 46px;
@@ -567,33 +522,24 @@ header .location {
     line-height: 21px;
     letter-spacing: 0em;
   }
-
   .home-hero-banner .btn-hero {
     margin-bottom: 40px;
   }
-
   /** header btn options **/
   .fonctionement {
     padding: 10px;
-    height: 360px;
-    /*440px;*/
+    height: 360px; /*440px;*/
   }
-
   .fonctionement .fonctionement-title {
     margin-bottom: 30px;
   }
-
   .fonctionement .btn-group {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* Créer deux colonnes de largeur égale */
-    grid-template-rows: repeat(3, auto);
-    /* Créer deux lignes de hauteur adaptée au contenu */
-    grid-auto-flow: column;
-    /* Remplir les cellules du grid par colonne */
+    grid-template-columns: repeat(1, 1fr); /* Créer deux colonnes de largeur égale */
+    grid-template-rows: repeat(3, auto); /* Créer deux lignes de hauteur adaptée au contenu */
+    grid-auto-flow: column; /* Remplir les cellules du grid par colonne */
     margin-left: 5%;
   }
-
   .fonctionement .btn-option {
     display: grid;
     grid-template-columns: 5px 10px auto;
@@ -609,7 +555,6 @@ header .location {
     margin-bottom: 0.9rem;
     margin-right: 0.3rem;
   }
-
   .fonctionement .btn-option .list-number {
     border: 1px solid black;
     padding: 5px 15px 5px 15px;
@@ -623,54 +568,45 @@ header .location {
     border: 0px solid #9356DC;
     color: var(--white-color);
   }
-
   .fonctionement .btn-option .btn-list-option {
     color: #9356DC;
   }
-
   /** End header btn options **/
   /****** fonctionnement And restaurants ***********/
   .fonctionnement-and-restaurants {
     display: block;
     justify-content: space-between;
   }
-
   .fonctionnement-and-restaurants section {
     padding: 30px;
     box-sizing: border-box;
   }
-
   /****** Restaurants ***********/
   .restaurants {
     width: 100%;
   }
-
   .restaurants-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .restaurants-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 5px;
   }
-
   .restaurants-cards .card {
     display: block;
     height: 241px;
     margin-top: 33px;
   }
-
   .restaurants-cards img {
     width: 100%;
     height: 181px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
-
   .restaurants-cards .card-content {
     width: 100%;
     padding-left: 15px;
@@ -680,32 +616,26 @@ header .location {
     justify-content: space-between;
     box-sizing: border-box;
   }
-
   .restaurants-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
   }
-
   .restaurants-cards .card-subtitle {
     margin: 0;
   }
-
   .restaurants-cards .card-rating {
     margin-top: 10px;
     margin-bottom: 5px;
   }
-
   footer {
     background: var(--footer-bg-color);
     color: var(--bg-color);
     border: 1px solid var(--footer-bg-color);
   }
-
   footer .footer-content {
     display: block;
     gap: 10px;
   }
-
   footer .footer-content .footer-title {
     width: 137.58px;
     height: 27px;
@@ -717,7 +647,6 @@ header .location {
     letter-spacing: 0em;
     text-align: left;
   }
-
   footer .footer-content .footer-menu {
     display: flex;
     flex-direction: column;
