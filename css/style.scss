@@ -181,7 +181,7 @@ a {
 
 /*** button style ***/
 .btn {
-    width: 17.581%;
+    width: 18.290%;
     height: 50px;
     top: 50px;
     color: var(--white-color);
@@ -457,6 +457,16 @@ header {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     /***..***/
+    .home-hero-banner{
+        width: 100%;
+        .btn{
+            width: 21.70%;/*180.49px;*/
+            height: 26px;
+            top: 13px;
+            left: 18.75px;
+            padding: 12px;
+        }
+    }    
 }
 
 /* Small devices (phones, less than 768px) */
@@ -534,6 +544,13 @@ header {
         }
         .btn-hero{
             margin-bottom: 40px;
+        }
+        .btn{
+            width: 51.69%;/*218px;*/
+            height: 26px;
+            top: 13px;
+            left: 18.75px;
+            padding: 12px
         }
     }    
 
