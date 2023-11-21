@@ -659,9 +659,27 @@ header {
             width: 100%;
             height: 181px;
             border-top-left-radius: 20px;
-            border-top-right-radius: 20px;            
+            border-top-right-radius: 20px;         
         }
 
+        .card-label{
+            width: 80px;
+            height: 29px;
+            background-color: #99E2D0;
+            position: absolute; /* Modifié de relative à absolute */
+            top: 7%; /* Modifié de 13px à 10% */
+            left: 70%;/*230px;*/
+            box-shadow: 0px 2px 4px 0px #00000026;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
         .card-content {
             width: 100%;
             padding-left: 15px;
@@ -686,6 +704,8 @@ header {
             margin-bottom: 5px;
         }        
     }
+
+    /** Footer **/
     footer {
         background: var(--footer-bg-color);
         color: var(--bg-color);
