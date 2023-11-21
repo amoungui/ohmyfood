@@ -67,8 +67,11 @@
     animation-fill-mode: forwards; /* Garde les styles de la dernière image clé après que l'animation soit terminée */
 }
 /* End Style du loader */
+.card-rating{
+    cursor: pointer;
+}
 
-.fa-icon{
+.fa-icon {
     font-size: 21px;
     width: 21px;
     height: 21px;
@@ -100,6 +103,21 @@
     display: none;
 }
 
+.card-rating:active .fa-icon {
+    display: none;
+}
+
+.card-rating:focus .fa-solid {
+    display: inline;
+}
+
+.card-rating:focus .fa-regular {
+    display: none;
+}
+
+.card-rating:focus .fa-icon {
+    display: none;
+}
 
 
 body {
@@ -552,7 +570,6 @@ header {
             height: 26px;
             top: 13px;
             left: 18.75px;
-            padding: 12px
         }
     }    
 

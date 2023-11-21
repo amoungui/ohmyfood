@@ -359,6 +359,11 @@ main {
     font-family: Roboto;
     font-size: 15px;
   }
+  .home-hero-banner .btn {
+    width: 49.58%;
+    height: 50px;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=pages.css.map */

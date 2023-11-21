@@ -77,6 +77,10 @@
 }
 
 /* End Style du loader */
+.card-rating {
+  cursor: pointer;
+}
+
 .fa-icon {
   font-size: 21px;
   width: 21px;
@@ -106,6 +110,22 @@
 }
 
 .card-rating:active .fa-regular {
+  display: none;
+}
+
+.card-rating:active .fa-icon {
+  display: none;
+}
+
+.card-rating:focus .fa-solid {
+  display: inline;
+}
+
+.card-rating:focus .fa-regular {
+  display: none;
+}
+
+.card-rating:focus .fa-icon {
   display: none;
 }
 
@@ -544,7 +564,6 @@ header .location {
     height: 26px;
     top: 13px;
     left: 18.75px;
-    padding: 12px;
   }
   /** header btn options **/
   .fonctionement {
