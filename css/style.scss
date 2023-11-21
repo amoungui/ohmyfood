@@ -421,7 +421,7 @@ header {
         background-color: #99E2D0;
         position: absolute; /* Modifié de relative à absolute */
         top: 7%; /* Modifié de 13px à 10% */
-        left: 70%;/*230px;*/
+        left: 78%;/*230px;*/
         box-shadow: 0px 2px 4px 0px #00000026;
         font-family: Roboto;
         font-size: 14px;
@@ -431,6 +431,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #008766;
     }
 
     .card-content {
