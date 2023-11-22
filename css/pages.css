@@ -158,6 +158,9 @@ main {
   align-items: center;
   margin-top: 60%;
 }
+.menus-cards .card .btn-check .fa-solid {
+  color: #fff;
+}
 .menus-cards .card:hover .btn-check {
   display: inline;
 }
