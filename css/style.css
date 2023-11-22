@@ -507,6 +507,11 @@ header .location {
     left: 18.75px;
     padding: 12px;
   }
+  .restaurants-cards .card-label {
+    position: absolute; /* Modifié de relative à absolute */
+    top: 7%; /* Modifié de 13px à 10% */
+    left: 64%; /*230px;*/
+  }
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -674,7 +679,7 @@ header .location {
     background-color: #99E2D0;
     position: absolute; /* Modifié de relative à absolute */
     top: 7%; /* Modifié de 13px à 10% */
-    left: 70%; /*230px;*/
+    left: 67%; /*230px;*/
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     font-family: Roboto;
     font-size: 14px;
