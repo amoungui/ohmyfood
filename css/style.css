@@ -516,6 +516,19 @@ header .location {
     top: 7%; /* Modifié de 13px à 10% */
     left: 68%; /*230px;*/
   }
+  .list-number {
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+    margin-left: -12px;
+    border-radius: 50px;
+  }
+  .btn-list-option {
+    color: #9356DC;
+  }
+  .btn-function {
+    font-size: 70%;
+  }
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -639,6 +652,9 @@ header .location {
   }
   .fonctionement .btn-option .btn-list-option {
     color: #9356DC;
+  }
+  .fonctionement .btn-option .btn-function {
+    font-size: 16px;
   }
   /** End header btn options **/
   /****** fonctionnement And restaurants ***********/
