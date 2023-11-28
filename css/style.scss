@@ -360,11 +360,16 @@ header {
             margin-bottom: 0.9rem;
             margin-right: 0.3rem;
             .list-number{
+                top: 132.86px;
+                left: 180px;
                 border: 1px solid black;
-                padding: 5px 15px 5px 15px;
+                padding: 5px 10px 5px 10px;
                 margin-bottom: 20px;
-                margin-left: -15px;
+                margin-left: -12px;
                 border-radius: 50px;
+                font-family: Roboto;
+                font-size: 10px;
+                text-align: left;                
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -374,6 +379,7 @@ header {
             }
             .btn-list-option{
                 color: #9356DC;
+                margin-top: 28%;
             }
         }    
     }
