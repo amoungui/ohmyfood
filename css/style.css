@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /****** General ***********/
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -214,7 +215,6 @@ a {
   height: 50px;
   top: 50px;
   color: var(--white-color);
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -299,7 +299,6 @@ header .location {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   width: 100%;
@@ -314,7 +313,6 @@ header .location {
   padding-top: 30px;
 }
 .home-hero-banner .section-title {
-  font-family: Roboto;
   font-size: 34px;
   font-weight: 700;
   line-height: 28px;
@@ -324,7 +322,6 @@ header .location {
   width: 90%;
   height: 46px;
   top: 220px;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
   line-height: 21px;
@@ -432,7 +429,6 @@ header .location {
   top: 7%; /* Modifié de 13px à 10% */
   left: 78%; /*230px;*/
   box-shadow: 0px 2px 4px 0px var(--card-box-shadow-color);
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -551,7 +547,6 @@ header .location {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     width: 100%;
@@ -565,7 +560,6 @@ header .location {
     padding-top: 30px;
   }
   .home-hero-banner .section-title {
-    font-family: Roboto;
     font-size: 34px;
     font-weight: 700;
     line-height: 28px;
@@ -681,7 +675,6 @@ header .location {
     top: 7%; /* Modifié de 13px à 10% */
     left: 67%; /*230px;*/
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
