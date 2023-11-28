@@ -422,14 +422,16 @@ header .location {
   border-top-right-radius: 15px;
 }
 .restaurants-cards .card-label {
-  width: 80px;
+  width: 19.59%; /*80px;*/
   height: 29px;
+  left: 35px;
+  border-radius: 2px;
   background-color: var(--card-label-background);
   position: absolute; /* Modifié de relative à absolute */
   top: 7%; /* Modifié de 13px à 10% */
-  left: 78%; /*230px;*/
+  left: 76%; /*230px;*/
   box-shadow: 0px 2px 4px 0px var(--card-box-shadow-color);
-  font-size: 14px;
+  font-size: 75%; /*14px;*/
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0em;
@@ -506,7 +508,7 @@ header .location {
   .restaurants-cards .card-label {
     position: absolute; /* Modifié de relative à absolute */
     top: 7%; /* Modifié de 13px à 10% */
-    left: 64%; /*230px;*/
+    left: 68%; /*230px;*/
   }
 }
 /* Small devices (phones, less than 768px) */
