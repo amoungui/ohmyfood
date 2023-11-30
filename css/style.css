@@ -662,6 +662,9 @@ header .location {
     height: 241px;
     margin-top: 33px;
   }
+  .restaurants-cards .card .label_3, .restaurants-cards .card .label_4 {
+    display: none;
+  }
   .restaurants-cards img {
     width: 100%;
     height: 181px;

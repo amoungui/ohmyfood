@@ -684,7 +684,10 @@ header {
         .card{
             display: block;
             height: 241px;
-            margin-top: 33px;            
+            margin-top: 33px;  
+            .label_3, .label_4 {
+                display: none;
+            }          
         }
 
         img{
