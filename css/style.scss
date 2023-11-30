@@ -392,7 +392,10 @@ header {
     grid-gap: 15px;
     .card{
         display: block;
-        margin-top: 33px;            
+        margin-top: 33px;
+        .label_2, .label_4 {
+            display: none;
+        }            
     }
 
     img{
