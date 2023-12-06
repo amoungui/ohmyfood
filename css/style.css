@@ -665,6 +665,9 @@ header .location {
     height: 241px;
     margin-top: 33px;
   }
+  .restaurants-cards .card .label_2, .restaurants-cards .card .label_4 {
+    display: inline-flex;
+  }
   .restaurants-cards .card .label_3, .restaurants-cards .card .label_4 {
     display: none;
   }
