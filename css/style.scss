@@ -687,7 +687,10 @@ header {
         .card{
             display: block;
             height: 241px;
-            margin-top: 33px;  
+            margin-top: 33px; 
+            .label_2, .label_4 {
+                display: inline-flex;
+            }             
             .label_3, .label_4 {
                 display: none;
             }          
