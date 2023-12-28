@@ -1,83 +1,79 @@
-/****** Pages Desktop style ******/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/****** Pages Desktop style ******/ 
+// Commentaire indiquant que les styles suivants sont pour les pages de bureau.
 
-* {
-    font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); // Importation de la police Google 'Shrikhand'.
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); // Importation de la police Google 'Roboto'.
+
+* { // Sélection de tous les éléments de la page.
+    font-family: 'Roboto', sans-serif; // Application de la police 'Roboto' à tous les éléments.
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Shrikhand', cursive;
+h1, h2, h3, h4, h5, h6 { // Sélection de tous les titres (h1 à h6).
+    font-family: 'Shrikhand', cursive; // Application de la police 'Shrikhand' à tous les titres.
 }
 
-/***** Header style ****/
-.main-container {
-    width: 100%;
+/***** Header style ****/ // Commentaire indiquant que les styles suivants sont pour l'en-tête.
+
+.main-container { // Sélection du conteneur principal.
+    width: 100%; // Définition de la largeur à 100%.
 }
 
-.header-logo {
-    display: grid; 
-    grid-template-columns: 10px auto; 
-    grid-template-rows: repeat(1, auto); 
-    grid-auto-flow: column;
-    height: 96.34px;
-    width: 100%;
+.header-logo { // Sélection du logo de l'en-tête.
+    display: grid;  // Utilisation d'un affichage de grille.
+    grid-template-columns: 10px auto;  // Définition de deux colonnes, une de 10px et l'autre qui prend l'espace restant.
+    grid-template-rows: repeat(1, auto);  // Définition d'une seule rangée.
+    grid-auto-flow: column; // Les éléments sont placés par colonne.
+    height: 96.34px; // Hauteur fixée à 96.34px.
+    width: 100%; // Largeur fixée à 100%.
 }
 
-/*.header-arrow {
-    margin-top: 30px; 
-    font-size: 20px; 
-    padding:10px;
-}*/
-
-.arrow-header {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*border: 1px solid black;*/
-    padding: 85%;
+.arrow-header { // Sélection de la flèche dans l'en-tête.
+    cursor: pointer; // Le curseur change en pointeur lorsqu'il est survolé.
+    display: flex; // Utilisation d'un affichage flexible.
+    align-items: center; // Les éléments sont centrés verticalement.
+    justify-content: center; // Les éléments sont centrés horizontalement.
+    padding: 85%; // Ajout d'une marge intérieure de 85%.
 }
 
-.arrow-header i {
-    font-size: 20px;
-    margin-left: 95%;
+.arrow-header i { // Sélection de l'élément 'i' dans '.arrow-header'.
+    font-size: 20px; // Taille de la police fixée à 20px.
+    margin-left: 95%; // Ajout d'une marge à gauche de 95%.
 }
 
-main{
-    position: relative;
+main{ // Sélection de l'élément 'main'.
+    position: relative; // Position fixée à 'relative'.
 }
 
-.page-hero-banner{
-    width: 100%;
-    height: 383px;
-    img{
-        width: 100%;
-        height: 383px;
-        position: absolute;
-        object-fit: cover; /* Cette ligne assure que l'image couvre la zone sans se déformer. */
-        z-index: -1; /* Met l'image en arrière-plan */
+.page-hero-banner{ // Sélection de '.page-hero-banner'.
+    width: 100%; // Largeur fixée à 100%.
+    height: 383px; // Hauteur fixée à 383px.
+    img{ // Sélection de l'image dans '.page-hero-banner'.
+        width: 100%; // Largeur de l'image fixée à 100%.
+        height: 383px; // Hauteur de l'image fixée à 383px.
+        position: absolute; // Position de l'image fixée à 'absolute'.
+        object-fit: cover; // L'image couvre la zone sans se déformer.
+        z-index: -1; // L'image est placée en arrière-plan.
     }
 }
 
-.commande-and-menus {
-    display: block;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1; /* Garde la div au premier plan */
-    margin-top: -5%;
-    box-sizing: border-box;
-    padding: 30px 180px 0px 180px;
+.commande-and-menus { // Sélection de '.commande-and-menus'.
+    display: block; // Utilisation d'un affichage en bloc.
+    justify-content: space-between; // Espace égal entre les éléments.
+    position: relative; // Position fixée à 'relative'.
+    z-index: 1; // La div reste au premier plan.
+    margin-top: -5%; // Ajout d'une marge en haut de -5%.
+    box-sizing: border-box; // La largeur et la hauteur incluent le contenu, la marge intérieure et la bordure.
+    padding: 30px 180px 0px 180px; // Ajout d'une marge intérieure.
 }
 
-.commande-and-menus section {
-    padding: 20px 30px 0px 15px;
-    box-sizing: border-box;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    padding-bottom: 50px;
+.commande-and-menus section { // Sélection de 'section' dans '.commande-and-menus'.
+    padding: 20px 30px 0px 15px; // Ajout d'une marge intérieure.
+    box-sizing: border-box; // La largeur et la hauteur incluent le contenu, la marge intérieure et la bordure.
+    border-top-right-radius: 30px; // Rayon du coin supérieur droit fixé à 30px.
+    border-top-left-radius: 30px; // Rayon du coin supérieur gauche fixé à 30px.
+    padding-bottom: 50px; // Ajout d'une marge intérieure en bas de 50px.
 }
-/***** End Header style ****/
+/***** End Header style ****/ // Commentaire indiquant la fin des styles de l'en-tête.
 
 /****** Restaurants ***********/
 .menus {
